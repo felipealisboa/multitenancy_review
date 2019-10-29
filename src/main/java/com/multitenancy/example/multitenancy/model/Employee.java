@@ -1,8 +1,6 @@
 package com.multitenancy.example.multitenancy.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.eclipse.persistence.annotations.Multitenant;
-import org.eclipse.persistence.annotations.TenantDiscriminatorColumn;
 import org.hibernate.validator.constraints.br.CNPJ;
 
 import javax.persistence.*;
@@ -12,12 +10,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-
-import static org.eclipse.persistence.annotations.MultitenantType.VPD;
 
 @Entity
 @Table(name = "emoloyee")

@@ -1,5 +1,6 @@
 package com.multitenancy.example.multitenancy.config;
 
+import com.multitenancy.example.multitenancy.tenancy.MultiTenancyInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
